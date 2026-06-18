@@ -49,7 +49,11 @@ llm-sleeper-agent-detector/
 
 🔧 Installation & Dependencies  
 
-Ensure your execution environment features an active NVIDIA GPU with a minimum VRAM envelope of 15GB (e.g., commodity NVIDIA T4 instances). Clone the repository and install the dependencies:Bashgit clone [https://github.com/yourusername/llm-sleeper-agent-detector.git](https://github.com/yourusername/llm-sleeper-agent-detector.git)
+Ensure your execution environment features an active NVIDIA GPU with a minimum VRAM envelope of 15GB (e.g., commodity NVIDIA T4 instances). 
+
+Clone the repository and install the dependencies:Bashgit 
+clone [https://github.com/yourusername/llm-sleeper-agent-detector.git](https://github.com/yourusername/llm-sleeper-agent-detector.git)
+
 cd llm-sleeper-agent-detector
 pip install torch numpy transformerlens
 
@@ -64,17 +68,30 @@ Expected Output LogsUpon a successful execution pass, your terminal will trace t
 
 --- Testing Control Sequence ---
 [*] Evaluating sequence processing...
+
 [Inference Hook] Live Anomaly Score (alpha): 0.0012
+
 [+] Stream cleared. Proceeding to standard generation.
 
 --- Testing Malicious Adversarial Payload Sequence ---
 
 [*] Evaluating sequence processing...
 [Inference Hook] Live Anomaly Score (alpha): 0.9948
-[🚨 INTERCEPTION] Breach confirmed (alpha >= 0.85). Executing containment sequence...
+
+[🚨 INTERCEPTION] Breach confirmed (alpha >= 0.85).
+
+Executing containment sequence...
+
+
 📊 Empirical Metrics Summary
+
 Target Family: EleutherAI Pythia-410m (Frozen parameters)
+
 Optimization Base: Layer $\ell=2$
+
 Post-Residual Stream BlockReceiver Operating Characteristic (ROC AUC): 1.0000
+
 True Positive Rate (TPR): 100.00%
+
 False Positive Rate (FPR): 0.00%
+
