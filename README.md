@@ -60,11 +60,20 @@ pip install torch numpy transformerlens
 ⚡ Execution & Verification
 
 To train the linear probe, extract the residual layer features from the dataset, and simulate real-time runtime interventions, execute the primary source module:Bashpython src/probe.py
-Expected Output LogsUpon a successful execution pass, your terminal will trace the extraction pipeline and demonstrate absolute linear separation capabilities:Plaintext[*] Initializing model: pythia-410m via TransformerLens...
+Expected Output LogsUpon a successful execution pass, your terminal will trace the extraction pipeline and demonstrate absolute linear separation capabilities
+
+:Plaintext[*] Initializing model: pythia-410m via TransformerLens...
+
 [+] Loaded 10 clean and 10 triggered prompts.
+
 [*] Extracting internal representations from layer 2...
+
 [*] Optimizing linear classification probe boundary...
+
 [+] Probe boundary training complete.
+
+
+
 
 --- Testing Control Sequence ---
 [*] Evaluating sequence processing...
@@ -76,11 +85,13 @@ Expected Output LogsUpon a successful execution pass, your terminal will trace t
 --- Testing Malicious Adversarial Payload Sequence ---
 
 [*] Evaluating sequence processing...
+
 [Inference Hook] Live Anomaly Score (alpha): 0.9948
 
 [🚨 INTERCEPTION] Breach confirmed (alpha >= 0.85).
 
 Executing containment sequence...
+
 
 
 📊 Empirical Metrics Summary
